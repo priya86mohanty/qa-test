@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: vengatesh27/backend:v1
+        image: 192.168.29.141:6000/backend:latest
         ports:
         - containerPort: 3000
 ---
