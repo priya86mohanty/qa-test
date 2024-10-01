@@ -1,0 +1,32 @@
+# automation-deployment.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: automation-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: automation
+  template:
+    metadata:
+      labels:
+        app: automation
+    spec:
+      containers:
+      - name: automation
+        image: priyamohanty1986/automation:v1
+        env:
+        - name: BACKEND_URL
+          valueFrom:
+            configMapKeyRef:
+              name: backend-config
+              key: backend-url
+        env:
+        - name: FRONTEND_URL
+          valueFrom:
+            configMapKeyRef:
+              name: frontend-config
+              key: frontend-url
+

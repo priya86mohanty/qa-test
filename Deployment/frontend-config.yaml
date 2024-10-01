@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-config
+data:
+  # property-like keys; each key maps to a simple value
+  frontend-url: http://frontend-service:80

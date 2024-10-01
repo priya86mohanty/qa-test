@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: 192.168.29.141:6000/frontend:latest
+        image: priyamohanty1986/frontend:latest
         ports:
         - containerPort: 8080
         env:
