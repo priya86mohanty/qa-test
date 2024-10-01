@@ -59,7 +59,7 @@ Deploy the services to a local Kubernetes cluster (e.g., Minikube or Kind).
 
 ## Deliverables
 
-1. Public GitHub Repository - <https://github.com/priya86mohanty/qa-test>
+1. Public GitHub Repository - <https://github.com/priya86mohanty/qa-test/tree/automation>
 2. Test script for automated testing - Available under `.\K8MsTest\KubernetesTest.cs`
 
 ## Python program
